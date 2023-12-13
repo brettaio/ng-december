@@ -1,10 +1,26 @@
 ﻿<div class="container">
     <div class="flex items-center justify-between py-5 lg:py-0">
-        <a routerLink="/"><img src="/assets/images/mugshot.svg" alt="logo" class="h-10" /></a>
+        <a routerLink="/"
+            ><img
+                src="/assets/images/mugshot.svg"
+                alt="logo"
+                class="h-10"
+                height="auto"
+                width="auto"
+        /></a>
         <div class="flex items-center">
-            <div (click)="toggleMenu()" class="overlay fixed inset-0 z-[51] bg-black/60 lg:hidden" [ngClass]="{ hidden: !showMenu }"></div>
-            <div class="menus" [ngClass]="{'overflow-y-auto ltr:!right-0 rtl:!left-0': showMenu }">
-                <div class="border-b border-gray/10 ltr:text-right rtl:text-left lg:hidden">
+            <div
+                (click)="toggleMenu()"
+                class="overlay fixed inset-0 z-[51] bg-black/60 lg:hidden"
+                [ngClass]="{ hidden: !showMenu }"
+            ></div>
+            <div
+                class="menus"
+                [ngClass]="{'overflow-y-auto ltr:!right-0 rtl:!left-0': showMenu }"
+            >
+                <div
+                    class="border-b border-gray/10 ltr:text-right rtl:text-left lg:hidden"
+                >
                     <button (click)="toggleMenu()" type="button" class="p-4">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -14,15 +30,28 @@
                             stroke="currentColor"
                             class="h-6 w-6 text-black dark:text-white"
                         >
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
                         </svg>
                     </button>
                 </div>
                 <ul (click)="showMenu = false">
                     <li>
-                        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> Home </a>
+                        <a
+                            routerLink="/"
+                            routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}"
+                        >
+                            Home
+                        </a>
                     </li>
-                    <li class="group relative" (click)="$event.stopPropagation()">
+                    <li
+                        class="group relative"
+                        (click)="$event.stopPropagation()"
+                    >
                         <a
                             href="javascript:;"
                             [ngClass]="{ active: router.url === '/crypto'
@@ -50,8 +79,16 @@
                         }"
                         >
                             Landing
-                            <div class="transition duration-500 group-hover:rotate-180 ltr:ml-2 rtl:mr-2">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div
+                                class="transition duration-500 group-hover:rotate-180 ltr:ml-2 rtl:mr-2"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
                                     <path
                                         d="M19 9L12 15L10.25 13.5M5 9L7.33333 11"
                                         stroke="currentColor"
@@ -63,23 +100,100 @@
                             </div>
                         </a>
                         <div class="submenu" (click)="showMenu = false">
-                            <a routerLink="/crypto" routerLinkActive="active">Crypto Currency</a>
-                            <a routerLink="/modern-saas" routerLinkActive="active"> Modern Saas </a>
-                            <a routerLink="/real-estate" routerLinkActive="active"> Real Estate </a>
-                            <a routerLink="/healthcare" routerLinkActive="active"> Health Care </a>
-                            <a routerLink="/marketing" routerLinkActive="active"> Sales Marketing </a>
-                            <a routerLink="/application" routerLinkActive="active"> Application </a>
-                            <a routerLink="/hotel-resort" routerLinkActive="active"> Hotel & Resort </a>
-                            <a routerLink="/nft" routerLinkActive="active"> NFT Marketplace </a>
-                            <a routerLink="/online-courses" routerLinkActive="active"> Online Courses </a>
-                            <a routerLink="/restaurant" routerLinkActive="active"> Restaurant </a>
-                            <a routerLink="/consulting" routerLinkActive="active"> Consulting </a>
-                            <a routerLink="/creative-agency" routerLinkActive="active"> Creative Agency </a>
-                            <a routerLink="/insurance" routerLinkActive="active"> Insurance </a>
-                            <a routerLink="/photography" routerLinkActive="active"> Photography </a>
-                            <a routerLink="/construction" routerLinkActive="active"> Construction </a>
-                            <a routerLink="/blog-landing" routerLinkActive="active"> Blog </a>
-                            <a routerLink="/event-concert" routerLinkActive="active">
+                            <a routerLink="/crypto" routerLinkActive="active"
+                                >Crypto Currency</a
+                            >
+                            <a
+                                routerLink="/modern-saas"
+                                routerLinkActive="active"
+                            >
+                                Modern Saas
+                            </a>
+                            <a
+                                routerLink="/real-estate"
+                                routerLinkActive="active"
+                            >
+                                Real Estate
+                            </a>
+                            <a
+                                routerLink="/healthcare"
+                                routerLinkActive="active"
+                            >
+                                Health Care
+                            </a>
+                            <a
+                                routerLink="/marketing"
+                                routerLinkActive="active"
+                            >
+                                Sales Marketing
+                            </a>
+                            <a
+                                routerLink="/application"
+                                routerLinkActive="active"
+                            >
+                                Application
+                            </a>
+                            <a
+                                routerLink="/hotel-resort"
+                                routerLinkActive="active"
+                            >
+                                Hotel & Resort
+                            </a>
+                            <a routerLink="/nft" routerLinkActive="active">
+                                NFT Marketplace
+                            </a>
+                            <a
+                                routerLink="/online-courses"
+                                routerLinkActive="active"
+                            >
+                                Online Courses
+                            </a>
+                            <a
+                                routerLink="/restaurant"
+                                routerLinkActive="active"
+                            >
+                                Restaurant
+                            </a>
+                            <a
+                                routerLink="/consulting"
+                                routerLinkActive="active"
+                            >
+                                Consulting
+                            </a>
+                            <a
+                                routerLink="/creative-agency"
+                                routerLinkActive="active"
+                            >
+                                Creative Agency
+                            </a>
+                            <a
+                                routerLink="/insurance"
+                                routerLinkActive="active"
+                            >
+                                Insurance
+                            </a>
+                            <a
+                                routerLink="/photography"
+                                routerLinkActive="active"
+                            >
+                                Photography
+                            </a>
+                            <a
+                                routerLink="/construction"
+                                routerLinkActive="active"
+                            >
+                                Construction
+                            </a>
+                            <a
+                                routerLink="/blog-landing"
+                                routerLinkActive="active"
+                            >
+                                Blog
+                            </a>
+                            <a
+                                routerLink="/event-concert"
+                                routerLinkActive="active"
+                            >
                                 Event Concert
                                 <span
                                     class="ml-1 whitespace-nowrap rounded bg-gradient-to-r from-[#ef4444] to-[#f97316] px-1.5 py-0.5 text-[10px] font-bold uppercase text-white"
@@ -95,7 +209,10 @@
                                     New
                                 </span>
                             </a>
-                            <a routerLink="/job-placement" routerLinkActive="active">
+                            <a
+                                routerLink="/job-placement"
+                                routerLinkActive="active"
+                            >
                                 Job Placement
                                 <span
                                     class="ml-1 whitespace-nowrap rounded bg-gradient-to-r from-[#ef4444] to-[#f97316] px-1.5 py-0.5 text-[10px] font-bold uppercase text-white"
@@ -103,7 +220,10 @@
                                     New
                                 </span>
                             </a>
-                            <a routerLink="/online-payments" routerLinkActive="active">
+                            <a
+                                routerLink="/online-payments"
+                                routerLinkActive="active"
+                            >
                                 Online Payments
                                 <span
                                     class="ml-1 whitespace-nowrap rounded bg-gradient-to-r from-[#ef4444] to-[#f97316] px-1.5 py-0.5 text-[10px] font-bold uppercase text-white"
@@ -111,7 +231,10 @@
                                     New
                                 </span>
                             </a>
-                            <a routerLink="/personal-portfolio" routerLinkActive="active">
+                            <a
+                                routerLink="/personal-portfolio"
+                                routerLinkActive="active"
+                            >
                                 Personal Portfolio
                                 <span
                                     class="ml-1 whitespace-nowrap rounded bg-gradient-to-r from-[#ef4444] to-[#f97316] px-1.5 py-0.5 text-[10px] font-bold uppercase text-white"
@@ -119,7 +242,10 @@
                                     New
                                 </span>
                             </a>
-                            <a routerLink="/portfolio-landing" routerLinkActive="active">
+                            <a
+                                routerLink="/portfolio-landing"
+                                routerLinkActive="active"
+                            >
                                 Portfolio
                                 <span
                                     class="ml-1 whitespace-nowrap rounded bg-gradient-to-r from-[#ef4444] to-[#f97316] px-1.5 py-0.5 text-[10px] font-bold uppercase text-white"
@@ -130,34 +256,66 @@
                         </div>
                     </li>
                     <li>
-                        <a routerLink="/portfolio" routerLinkActive="active" [ngClass]="{ active: router.url === '/portfolio-detail' }"> Portfolio </a>
+                        <a
+                            routerLink="/portfolio"
+                            routerLinkActive="active"
+                            [ngClass]="{ active: router.url === '/portfolio-detail' }"
+                        >
+                            Portfolio
+                        </a>
                     </li>
                     <li>
-                        <a routerLink="/services" routerLinkActive="active" [ngClass]="{ active: router.url === '/services-detail' }"> Service </a>
+                        <a
+                            routerLink="/services"
+                            routerLinkActive="active"
+                            [ngClass]="{ active: router.url === '/services-detail' }"
+                        >
+                            Service
+                        </a>
                     </li>
                     <li>
-                        <a routerLink="/team" routerLinkActive="active"> Team </a>
+                        <a routerLink="/team" routerLinkActive="active">
+                            Team
+                        </a>
                     </li>
                     <li>
-                        <a routerLink="/about-us" routerLinkActive="active"> About Us </a>
+                        <a routerLink="/about-us" routerLinkActive="active">
+                            About Us
+                        </a>
                     </li>
                     <li>
-                        <a routerLink="/career" routerLinkActive="active"> Career </a>
+                        <a routerLink="/career" routerLinkActive="active">
+                            Career
+                        </a>
                     </li>
                     <li
                         class="relative hidden items-center before:absolute before:top-1/2 before:h-[30px] before:w-[2px] before:-translate-y-1/2 before:bg-gray/30 ltr:pl-9 ltr:before:-left-[2px] rtl:pr-9 rtl:before:-right-[2px] lg:inline-flex"
                     ></li>
                 </ul>
             </div>
-            <ul class="flex items-center gap-5 ltr:pr-5 rtl:pl-5 ltr:lg:pl-5 ltr:lg:pr-0 rtl:lg:pl-0 rtl:lg:pr-5">
+            <ul
+                class="flex items-center gap-5 ltr:pr-5 rtl:pl-5 ltr:lg:pl-5 ltr:lg:pr-0 rtl:lg:pl-0 rtl:lg:pr-5"
+            >
                 <li>
                     <button
                         type="button"
                         class="flex h-5 w-5 items-center text-white hover:text-primary rtl:text-primary"
                         (click)="store.dispatch({ type: 'toggleDirection', payload: storeData?.direction === 'rtl' ? 'ltr' : 'rtl' })"
                     >
-                        <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 18.9439H7.72074" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                        <svg
+                            width="17"
+                            height="22"
+                            viewBox="0 0 17 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M16 18.9439H7.72074"
+                                stroke="currentColor"
+                                stroke-width="1.4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
                             <path
                                 d="M13.8571 21L16 18.9439L13.8571 16.8879"
                                 stroke="currentColor"
@@ -165,7 +323,13 @@
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                             />
-                            <path d="M1 16.4206H9.27926" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M1 16.4206H9.27926"
+                                stroke="currentColor"
+                                stroke-width="1.4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
                             <path
                                 d="M3.14287 18.4766L1 16.4206L3.14287 14.3645"
                                 stroke="currentColor"
@@ -180,8 +344,20 @@
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                             />
-                            <path d="M10.6426 12.3084V1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M6.3573 12.3084V1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M10.6426 12.3084V1"
+                                stroke="currentColor"
+                                stroke-width="1.4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M6.3573 12.3084V1"
+                                stroke="currentColor"
+                                stroke-width="1.4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
                         </svg>
                     </button>
                 </li>
@@ -224,14 +400,31 @@
                     </button>
                 </li>
             </ul>
-            <button type="button" class="flex h-10 w-10 items-center justify-center rounded-full bg-primary lg:hidden" (click)="toggleMenu()">
-                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
+            <button
+                type="button"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-primary lg:hidden"
+                (click)="toggleMenu()"
+            >
+                <svg
+                    width="22"
+                    height="18"
+                    viewBox="0 0 22 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="text-white"
+                >
                     <path
                         d="M2 15H11C11.552 15 12 15.447 12 16C12 16.553 11.552 17 11 17H2C1.448 17 1 16.553 1 16C1 15.447 1.448 15 2 15Z"
                         fill="currentColor"
                     />
-                    <path d="M2 8H20C20.552 8 21 8.447 21 9C21 9.553 20.552 10 20 10H2C1.448 10 1 9.553 1 9C1 8.447 1.448 8 2 8Z" fill="currentColor" />
-                    <path d="M21 2C21 1.447 20.552 1 20 1H7C6.448 1 6 1.447 6 2C6 2.553 6.448 3 7 3H20C20.552 3 21 2.553 21 2Z" fill="currentColor" />
+                    <path
+                        d="M2 8H20C20.552 8 21 8.447 21 9C21 9.553 20.552 10 20 10H2C1.448 10 1 9.553 1 9C1 8.447 1.448 8 2 8Z"
+                        fill="currentColor"
+                    />
+                    <path
+                        d="M21 2C21 1.447 20.552 1 20 1H7C6.448 1 6 1.447 6 2C6 2.553 6.448 3 7 3H20C20.552 3 21 2.553 21 2Z"
+                        fill="currentColor"
+                    />
                 </svg>
             </button>
         </div>
