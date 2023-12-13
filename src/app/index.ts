@@ -3,21 +3,37 @@ import { Store } from '@ngrx/store';
 
 @Component({
     moduleId: module.id,
-    templateUrl: './index.html',
+    templateUrl: './index.html'
 })
 export class IndexComponent {
+    /* Stripe Link */
+    stripeLink = 'https://buy.stripe.com/fZe5ln224amc0WQ7sy';
+
+    /* Hero Text */
     heroFirstSentence = `This cheeky fella here...`;
     heroSecondSentence = `Maximizes Google Ad Accounts.`;
     heroThirdSentence = `With Expert Management & Strategy`;
     heroForthSentence = `Website Optimization & Updates `;
 
+    /* Call To Action Buttons*/
+    heroCTA = `How Does Bretta Do It!?`;
+    firstServiceCTA = `Let's Advertise`;
+    secondServiceCTA = `Let's Optimize`;
+    thirdServiceCTA = `Let's Strategise`;
+    forthServiceCTA = `Let's Enterprise`;
+
     serviceH6 = `Can I Tell You How Bretta Brings The Holistic Approach To The Game?`;
     serviceH4 = `Here's a basic breakdown`;
 
-    why1 = `I can build ads, but I'm better at running ads. As an educator, I'm fluid in understanding and conceptualising other peoples problems. I can then take that and blue sky dream and conceptualise with you. We can strategize solutions based on your industry and goals. Ongoing Google Ads Management is my bread and butter. Let's make sandwiches.`;
-    why2 = ` I quit the corporate marketing game to go rogue and code (and raise kids), but big dogs hungry! I've been bouncing around languauges and command lines as a creative starving artist building projects that have given me an extreme attention to detail, and nouse to scaling ideas. One becomes two becomes four. I also did this to acccompany the idea - speed is key.`;
-    why3 = `I'm content in content. I have design, UX UI and content writing background, I also have that primary teaching degree to aid in my story telling. I also have this sick as digital friend called Alan Iverson - Well I call him AI for short. I cover the entire spectrum of digital marketing and branding to fill in the gaps that are needed. Fresh content. Fast Content.`;
-    why4 = `I take pride in the friends I've made and the true ones that I stay in constant connect with. Shopify experts, UXUI Gurus, Fullstack Devs, Entreprenuers, Cyber Security Leaders. All these people enrich my life with goodness and they're always one call away. I appreciate them dearly for the opportunites they have provided in my journey. You know who you are. Thank you!`;
+    firstService = 'Google Ads Management';
+    secondService = 'Web Development';
+    thirdService = 'Digital Marketing Strategy';
+    forthService = 'Professional Network Access';
+
+    firstServiceWhy = `I build & run impactful ads. My teaching, coaching & marketing background brings the ulimate toolbelt. I'm fluid in understanding problems to teach on. I connect with the blue sky dreamers. A conceptualist, existential philosopher, our potential is only limited in the mind. Google Ads Management is my bread and butter. Let's make sandwiches.`;
+    secondServiceWhy = `I code breakneck speeds. I build landing pages to accompany ads. Articulating Url Slugs & building innant ad relevance. This gives me an extreme attention to detail across ad copy and website copy. Both combined bring ad costs down. Service Location Pages are my absolute jam (example.com/service-location)`;
+    thirdServiceWhy = `Outside the square creativity, content in content. I am a story teller, imagination builder. We percieve & conceive as a means to receive what we want to achieve. I am the conduit between real world tactile and its digital application. We stratagise and prioritise what is the least path of resistance to meet our goals.`;
+    forthServiceWhy = `I take pride in the friends I've made and the true ones that I stay in constant connect with. Shopify experts, UXUI Gurus, Fullstack Devs, Entreprenuers, Cyber Security Leaders. All these people enrich my life with goodness and they're always one call away. I appreciate them dearly for the opportunites they have provided in my journey. You know who you are. Thank you!`;
 
     whyH6 = `A little more goodness to get you over the line`;
     whyH4 = `We bring solutions to make life easier for our customers.`;
