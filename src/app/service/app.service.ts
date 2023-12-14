@@ -11,9 +11,5 @@ export class AppService {
         // theme
         const theme = localStorage.getItem('theme') || 'light';
         this.store.dispatch({ type: 'toggleTheme', payload: theme });
-
-        // direction
-        const direction = localStorage.getItem('direction') || 'ltr';
-        this.store.dispatch({ type: 'toggleDirection', payload: direction });
     }
 }

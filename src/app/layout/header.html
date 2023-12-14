@@ -5,8 +5,8 @@
                 src="/assets/images/mugshot.svg"
                 alt="logo"
                 class="h-10"
-                height="auto"
-                width="auto"
+                height="48px"
+                width="48px"
         /></a>
         <div class="flex items-center">
             <div
@@ -16,11 +16,9 @@
             ></div>
             <div
                 class="menus"
-                [ngClass]="{'overflow-y-auto ltr:!right-0 rtl:!left-0': showMenu }"
+                [ngClass]="{'overflow-y-auto !right-0': showMenu }"
             >
-                <div
-                    class="border-b border-gray/10 ltr:text-right rtl:text-left lg:hidden"
-                >
+                <div class="border-b border-gray/10 text-right lg:hidden">
                     <button (click)="toggleMenu()" type="button" class="p-4">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -48,220 +46,14 @@
                             Home
                         </a>
                     </li>
-                    <li
-                        class="group relative"
-                        (click)="$event.stopPropagation()"
-                    >
-                        <a
-                            href="javascript:;"
-                            [ngClass]="{ active: router.url === '/crypto'
-                            || router.url === '/modern-saas'
-                            || router.url === '/real-estate'
-                            || router.url === '/healthcare'
-                            || router.url === '/marketing'
-                            || router.url === '/application'
-                            || router.url === '/hotel-resort'
-                            || router.url === '/nft'
-                            || router.url === '/online-courses'
-                            || router.url === '/restaurant'
-                            || router.url === '/consulting'
-                            || router.url === '/creative-agency'
-                            || router.url === '/insurance'
-                            || router.url === '/photography'
-                            || router.url === '/construction'
-                            || router.url === '/blog-landing'
-                            || router.url === '/event-concert'
-                            || router.url === '/gym'
-                            || router.url === '/job-placement'
-                            || router.url === '/online-payments'
-                            || router.url === '/personal-portfolio'
-                            || router.url === '/portfolio-landing'
-                        }"
-                        >
-                            Landing
-                            <div
-                                class="transition duration-500 group-hover:rotate-180 ltr:ml-2 rtl:mr-2"
-                            >
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M19 9L12 15L10.25 13.5M5 9L7.33333 11"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
-                        <div class="submenu" (click)="showMenu = false">
-                            <a routerLink="/crypto" routerLinkActive="active"
-                                >Crypto Currency</a
-                            >
-                            <a
-                                routerLink="/modern-saas"
-                                routerLinkActive="active"
-                            >
-                                Modern Saas
-                            </a>
-                            <a
-                                routerLink="/real-estate"
-                                routerLinkActive="active"
-                            >
-                                Real Estate
-                            </a>
-                            <a
-                                routerLink="/healthcare"
-                                routerLinkActive="active"
-                            >
-                                Health Care
-                            </a>
-                            <a
-                                routerLink="/marketing"
-                                routerLinkActive="active"
-                            >
-                                Sales Marketing
-                            </a>
-                            <a
-                                routerLink="/application"
-                                routerLinkActive="active"
-                            >
-                                Application
-                            </a>
-                            <a
-                                routerLink="/hotel-resort"
-                                routerLinkActive="active"
-                            >
-                                Hotel & Resort
-                            </a>
-                            <a routerLink="/nft" routerLinkActive="active">
-                                NFT Marketplace
-                            </a>
-                            <a
-                                routerLink="/online-courses"
-                                routerLinkActive="active"
-                            >
-                                Online Courses
-                            </a>
-                            <a
-                                routerLink="/restaurant"
-                                routerLinkActive="active"
-                            >
-                                Restaurant
-                            </a>
-                            <a
-                                routerLink="/consulting"
-                                routerLinkActive="active"
-                            >
-                                Consulting
-                            </a>
-                            <a
-                                routerLink="/creative-agency"
-                                routerLinkActive="active"
-                            >
-                                Creative Agency
-                            </a>
-                            <a
-                                routerLink="/insurance"
-                                routerLinkActive="active"
-                            >
-                                Insurance
-                            </a>
-                            <a
-                                routerLink="/photography"
-                                routerLinkActive="active"
-                            >
-                                Photography
-                            </a>
-                            <a
-                                routerLink="/construction"
-                                routerLinkActive="active"
-                            >
-                                Construction
-                            </a>
-                            <a
-                                routerLink="/blog-landing"
-                                routerLinkActive="active"
-                            >
-                                Blog
-                            </a>
-                            <a
-                                routerLink="/event-concert"
-                                routerLinkActive="active"
-                            >
-                                Event Concert
-                                <span
-                                    class="ml-1 whitespace-nowrap rounded bg-gradient-to-r from-[#ef4444] to-[#f97316] px-1.5 py-0.5 text-[10px] font-bold uppercase text-white"
-                                >
-                                    New
-                                </span>
-                            </a>
-                            <a routerLink="/gym" routerLinkActive="active">
-                                GYM
-                                <span
-                                    class="ml-1 whitespace-nowrap rounded bg-gradient-to-r from-[#ef4444] to-[#f97316] px-1.5 py-0.5 text-[10px] font-bold uppercase text-white"
-                                >
-                                    New
-                                </span>
-                            </a>
-                            <a
-                                routerLink="/job-placement"
-                                routerLinkActive="active"
-                            >
-                                Job Placement
-                                <span
-                                    class="ml-1 whitespace-nowrap rounded bg-gradient-to-r from-[#ef4444] to-[#f97316] px-1.5 py-0.5 text-[10px] font-bold uppercase text-white"
-                                >
-                                    New
-                                </span>
-                            </a>
-                            <a
-                                routerLink="/online-payments"
-                                routerLinkActive="active"
-                            >
-                                Online Payments
-                                <span
-                                    class="ml-1 whitespace-nowrap rounded bg-gradient-to-r from-[#ef4444] to-[#f97316] px-1.5 py-0.5 text-[10px] font-bold uppercase text-white"
-                                >
-                                    New
-                                </span>
-                            </a>
-                            <a
-                                routerLink="/personal-portfolio"
-                                routerLinkActive="active"
-                            >
-                                Personal Portfolio
-                                <span
-                                    class="ml-1 whitespace-nowrap rounded bg-gradient-to-r from-[#ef4444] to-[#f97316] px-1.5 py-0.5 text-[10px] font-bold uppercase text-white"
-                                >
-                                    New
-                                </span>
-                            </a>
-                            <a
-                                routerLink="/portfolio-landing"
-                                routerLinkActive="active"
-                            >
-                                Portfolio
-                                <span
-                                    class="ml-1 whitespace-nowrap rounded bg-gradient-to-r from-[#ef4444] to-[#f97316] px-1.5 py-0.5 text-[10px] font-bold uppercase text-white"
-                                >
-                                    New
-                                </span>
-                            </a>
-                        </div>
-                    </li>
+
                     <li>
                         <a
-                            routerLink="/portfolio"
+                            routerLink="/landing-page-experiences"
                             routerLinkActive="active"
                             [ngClass]="{ active: router.url === '/portfolio-detail' }"
                         >
-                            Portfolio
+                            Landing Page Experiences
                         </a>
                     </li>
                     <li>
@@ -270,22 +62,17 @@
                             routerLinkActive="active"
                             [ngClass]="{ active: router.url === '/services-detail' }"
                         >
-                            Service
+                            Google Ads Management
                         </a>
                     </li>
                     <li>
                         <a routerLink="/team" routerLinkActive="active">
-                            Team
+                            Who Is Bretta Etc?
                         </a>
                     </li>
                     <li>
                         <a routerLink="/about-us" routerLinkActive="active">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a routerLink="/career" routerLinkActive="active">
-                            Career
+                            Let's Get Started
                         </a>
                     </li>
                     <li
@@ -293,74 +80,7 @@
                     ></li>
                 </ul>
             </div>
-            <ul
-                class="flex items-center gap-5 ltr:pr-5 rtl:pl-5 ltr:lg:pl-5 ltr:lg:pr-0 rtl:lg:pl-0 rtl:lg:pr-5"
-            >
-                <li>
-                    <button
-                        type="button"
-                        class="flex h-5 w-5 items-center text-white hover:text-primary rtl:text-primary"
-                        (click)="store.dispatch({ type: 'toggleDirection', payload: storeData?.direction === 'rtl' ? 'ltr' : 'rtl' })"
-                    >
-                        <svg
-                            width="17"
-                            height="22"
-                            viewBox="0 0 17 22"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M16 18.9439H7.72074"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                            <path
-                                d="M13.8571 21L16 18.9439L13.8571 16.8879"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                            <path
-                                d="M1 16.4206H9.27926"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                            <path
-                                d="M3.14287 18.4766L1 16.4206L3.14287 14.3645"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                            <path
-                                d="M12.7855 1H5.82118C4.82662 1 3.87279 1.37909 3.16952 2.05387C2.46626 2.72865 2.07117 3.64385 2.07117 4.59813C2.07117 5.55242 2.46626 6.46761 3.16952 7.14239C3.87279 7.81717 4.82662 8.19626 5.82118 8.19626H6.3569"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                            <path
-                                d="M10.6426 12.3084V1"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                            <path
-                                d="M6.3573 12.3084V1"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                        </svg>
-                    </button>
-                </li>
+            <ul class="flex items-center gap-5 pr-5 lg:pl-5 lg:pr-0">
                 <li>
                     <button
                         type="button"

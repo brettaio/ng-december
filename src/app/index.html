@@ -17,7 +17,13 @@
                 <div
                     class="grid items-center gap-8 bg-[url('/assets/images/world-map.png')] bg-cover bg-top bg-no-repeat pb-0 pt-14 lg:grid-cols-2 lg:pb-60 lg:pt-20 xl:pt-36"
                 >
-                    <div class="text-white lg:w-full">
+                    <div
+                        class="text-white lg:w-full"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                        data-aos-offset="0"
+                        data-aos-delay="300"
+                    >
                         <!-- Left Column -->
                         <h2
                             class="text-center mb-8 text-4xl font-extrabold leading-normal sm:text-5xl lg:text-[70px] lg:leading-[90px]"
@@ -46,7 +52,7 @@
                         >
                     </div>
                     <div
-                        class="mx-auto mb-2 mt-5 flex w-auto justify-center md:w-[540px] lg:relative lg:w-full"
+                        class="mx-auto mb-16 mt-5 flex w-auto justify-center md:w-[540px] lg:relative lg:w-full"
                         data-aos="fade-right"
                         data-aos-duration="1000"
                         data-aos-offset="0"
@@ -69,12 +75,22 @@
         class="bg-[url(/assets/images/service-bg.png)] bg-cover bg-center bg-no-repeat py-14 dark:bg-none lg:py-[100px]"
     >
         <div class="container">
-            <div class="heading text-center">
+            <div
+                class="heading text-center"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+                data-aos-delay="300"
+            >
                 <h6>{{serviceH6}}</h6>
                 <h4>{{serviceH4}}</h4>
             </div>
-            <div class="grid gap-6 lg:grid-col- grid-cols-1">
-                <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="grid gap-6 lg:grid-cols-2 grid-cols-1">
+                <div
+                    class="h-full"
+                    data-aos="zoom-in-right"
+                    data-aos-duration="1000"
+                >
                     <div
                         class="group rounded-3xl border-2 border-white bg-white p-6 shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-white/[0.04] dark:to-transparent dark:!shadow-none dark:hover:bg-secondary"
                     >
@@ -129,7 +145,11 @@
                         <!-- Link Button End-->
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1000">
+                <div
+                    class="h-full"
+                    data-aos="zoom-in-left"
+                    data-aos-duration="1000"
+                >
                     <div
                         class="group rounded-3xl border-2 border-white bg-white p-6 shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-white/[0.04] dark:to-transparent dark:!shadow-none dark:hover:bg-secondary"
                     >
@@ -183,7 +203,11 @@
                         <!-- Link Button End-->
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1000">
+                <div
+                    class="h-full"
+                    data-aos="zoom-in-right"
+                    data-aos-duration="1000"
+                >
                     <div
                         class="group rounded-3xl border-2 border-white bg-white p-6 shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-white/[0.04] dark:to-transparent dark:!shadow-none dark:hover:bg-secondary"
                     >
@@ -193,17 +217,12 @@
                             <svg
                                 width="24"
                                 height="24"
-                                viewBox="0 0 24 24"
+                                viewBox="0 -960 960 960"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <path
-                                    opacity="0.5"
-                                    d="M6.21053 20H3.05263C2.77346 20 2.50572 19.8891 2.30831 19.6917C2.1109 19.4943 2 19.2265 2 18.9474V10.5263C2 10.2471 2.1109 9.97941 2.30831 9.782C2.50572 9.58459 2.77346 9.47369 3.05263 9.47369H6.21053C6.4897 9.47369 6.75744 9.58459 6.95485 9.782C7.15226 9.97941 7.26316 10.2471 7.26316 10.5263V18.9474C7.26316 19.2265 7.15226 19.4943 6.95485 19.6917C6.75744 19.8891 6.4897 20 6.21053 20ZM20.9474 20H17.7895C17.5103 20 17.2426 19.8891 17.0452 19.6917C16.8477 19.4943 16.7368 19.2265 16.7368 18.9474V7.36843C16.7368 7.08925 16.8477 6.82151 17.0452 6.6241C17.2426 6.4267 17.5103 6.3158 17.7895 6.3158H20.9474C21.2265 6.3158 21.4943 6.4267 21.6917 6.6241C21.8891 6.82151 22 7.08925 22 7.36843V18.9474C22 19.2265 21.8891 19.4943 21.6917 19.6917C21.4943 19.8891 21.2265 20 20.9474 20Z"
-                                    fill="white"
-                                />
-                                <path
-                                    d="M13.5789 20H10.421C10.1419 20 9.87412 19.8891 9.67672 19.6917C9.47931 19.4943 9.36841 19.2265 9.36841 18.9474V1.05263C9.36841 0.773456 9.47931 0.505715 9.67672 0.308309C9.87412 0.110902 10.1419 0 10.421 0H13.5789C13.8581 0 14.1259 0.110902 14.3233 0.308309C14.5207 0.505715 14.6316 0.773456 14.6316 1.05263V18.9474C14.6316 19.2265 14.5207 19.4943 14.3233 19.6917C14.1259 19.8891 13.8581 20 13.5789 20Z"
+                                    d="m656-120-56-56 63-64-63-63 56-57 64 64 63-64 57 57-64 63 64 64-57 56-63-63-64 63Zm-416-80q17 0 28.5-11.5T280-240q0-17-11.5-28.5T240-280q-17 0-28.5 11.5T200-240q0 17 11.5 28.5T240-200Zm0 80q-50 0-85-35t-35-85q0-50 35-85t85-35q37 0 67.5 20.5T352-284q39-11 63.5-43t24.5-73v-160q0-83 58.5-141.5T640-760h46l-63-63 57-57 160 160-160 160-57-56 63-64h-46q-50 0-85 35t-35 85v160q0 73-47 128.5T354-203q-12 37-43.5 60T240-120Zm-64-480-56-56 63-64-63-63 56-57 64 64 63-64 57 57-64 63 64 64-57 56-63-63-64 63Z"
                                     fill="white"
                                 />
                             </svg>
@@ -242,7 +261,11 @@
                         <!-- Link Button End-->
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1000">
+                <div
+                    class="h-full"
+                    data-aos="zoom-in-left"
+                    data-aos-duration="1000"
+                >
                     <div
                         class="group rounded-3xl border-2 border-white bg-white p-6 shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-white/[0.04] dark:to-transparent dark:!shadow-none dark:hover:bg-secondary"
                     >
@@ -300,7 +323,7 @@
         </div>
     </section>
     <section
-        class="py-14 dark:!bg-none lg:py-[100px]"
+        class="py-6 dark:!bg-none"
         style="
             background: linear-gradient(
                 180deg,
@@ -317,7 +340,11 @@
             <div class="container">
                 <div class="items-end gap-4 lg:flex xl:gap-0">
                     <div class="lg:w-1/2">
-                        <div class="heading mb-16 text-center lg:text-left">
+                        <div
+                            class="heading mb-16 text-center lg:text-left"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-center"
+                        >
                             <h6>What Makes us Different?</h6>
                             <h4
                                 class="leading-normal !text-white lg:!leading-[50px]"

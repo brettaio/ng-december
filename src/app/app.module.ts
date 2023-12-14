@@ -29,7 +29,7 @@ import { ErrorComponent } from './error';
 
 //components
 import { IndexComponent } from './index';
-import { PortfolioComponent } from './portfolio';
+import { LandingPageExperiencesComponent } from './landing-page-experiences';
 import { PortfolioDetailComponent } from './portfolio-detail';
 import { ContactusComponent } from './components/contactus-component';
 import { ServicesComponent } from './services';
@@ -76,6 +76,8 @@ import { PortfolioLandingComponent } from './portfolio-landing';
 import { PhotographyComponent } from './photography';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
+//pipe
+
 @NgModule({
     declarations: [
         ModalDialog,
@@ -84,7 +86,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
         FooterComponent,
         ErrorComponent,
         IndexComponent,
-        PortfolioComponent,
+        LandingPageExperiencesComponent,
         PortfolioDetailComponent,
         ContactusComponent,
         ServicesComponent,

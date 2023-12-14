@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { IndexComponent } from './index';
 import { ErrorComponent } from './error';
-import { PortfolioComponent } from './portfolio';
 import { PortfolioDetailComponent } from './portfolio-detail';
 import { ServicesComponent } from './services';
 import { ServicesDetailComponent } from './services-detail';
@@ -38,6 +37,7 @@ import { PersonalPortfolioComponent } from './personal-portfolio';
 import { RestaurantComponent } from './restaurant';
 import { PortfolioLandingComponent } from './portfolio-landing';
 import { PhotographyComponent } from './photography';
+import { LandingPageExperiencesComponent } from './landing-page-experiences';
 
 const routes: Routes = [
     {
@@ -46,179 +46,179 @@ const routes: Routes = [
         title: 'Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
-        path: 'portfolio',
-        component: PortfolioComponent,
-        title: 'Portfolio | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        path: 'landing-page-experiences',
+        component: LandingPageExperiencesComponent,
+        title: 'Portfolio | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'portfolio-detail',
         component: PortfolioDetailComponent,
-        title: 'Portfolio Detail | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Portfolio Detail | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'services',
         component: ServicesComponent,
-        title: 'Services | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Services | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'services-detail',
         component: ServicesDetailComponent,
-        title: 'Services Detail | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Services Detail | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'team',
         component: TeamComponent,
-        title: 'Team | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Team | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'about-us',
         component: AboutUsComponent,
-        title: 'About Us | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'About Us | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'career',
         component: CareerComponent,
-        title: 'Career | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Career | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'contact-us',
         component: ContactUsComponent,
-        title: 'Contact Us | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Contact Us | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'terms-conditions',
         component: TermsConditionsComponent,
-        title: 'Terms Conditions | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Terms Conditions | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'privacy-policy',
         component: PrivacyPolicyComponent,
-        title: 'Privacy Policy | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Privacy Policy | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'faq',
         component: FaqComponent,
-        title: 'FAQs | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'FAQs | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'blog',
         component: BlogComponent,
-        title: 'Blog | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Blog | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'blog-details',
         component: BlogDetailsComponent,
-        title: 'Blog Details | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Blog Details | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'crypto',
         component: CryptoComponent,
-        title: 'Crypto | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Crypto | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'real-estate',
         component: RealEstateComponent,
-        title: 'Real Estate | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Real Estate | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'modern-saas',
         component: ModernSaasComponent,
-        title: 'Modern SAAS | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Modern SAAS | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'healthcare',
         component: HealthcareComponent,
-        title: 'Health Care | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Health Care | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'hotel-resort',
         component: HotelResortComponent,
-        title: 'Hotel & Resort | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Hotel & Resort | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'marketing',
         component: MarketingComponent,
-        title: 'Marketing | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Marketing | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'application',
         component: ApplicationComponent,
-        title: 'Application | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Application | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'nft',
         component: NftComponent,
-        title: 'Nft | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Nft | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'blog-landing',
         component: BlogLandingComponent,
-        title: 'Blog | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Blog | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'construction',
         component: ConstructionComponent,
-        title: 'Construction | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Construction | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'consulting',
         component: ConsultingComponent,
-        title: 'Consulting | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Consulting | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'creative-agency',
         component: CreativeComponent,
-        title: 'Creative Agency | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Creative Agency | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'event-concert',
         component: EventComponent,
-        title: 'Event Concert | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Event Concert | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'gym',
         component: GymComponent,
-        title: 'GYM | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'GYM | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'insurance',
         component: InsuranceComponent,
-        title: 'Insurance | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Insurance | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'job-placement',
         component: JobPlacementComponent,
-        title: 'Job Placement | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Job Placement | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'online-courses',
         component: OnlineCoursesComponent,
-        title: 'Online Courses | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Online Courses | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'online-payments',
         component: OnlinePaymentsComponent,
-        title: 'Online Payments | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Online Payments | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'personal-portfolio',
         component: PersonalPortfolioComponent,
-        title: 'Personal Portfolio | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Personal Portfolio | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'restaurant',
         component: RestaurantComponent,
-        title: 'Restaurant | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Restaurant | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'portfolio-landing',
         component: PortfolioLandingComponent,
-        title: 'Portfolio Landing | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Portfolio Landing | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     {
         path: 'photography',
         component: PhotographyComponent,
-        title: 'Photography | Plurk – Tailwind CSS Multipurpose Landing Templates'
+        title: 'Photography | Bretta Etc Ltd. Google Ad Management & Licensed Templates'
     },
     { path: '**', component: ErrorComponent }
 ];

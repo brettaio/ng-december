@@ -5,13 +5,16 @@ import { Router } from '@angular/router';
 @Component({
     moduleId: module.id,
     selector: 'header',
-    templateUrl: './header.html',
+    templateUrl: './header.html'
 })
 export class HeaderComponent {
     storeData: any;
     showMenu = false;
     showSearch = false;
-    constructor(public store: Store<any>, public router: Router) {
+    constructor(
+        public store: Store<any>,
+        public router: Router
+    ) {
         this.initStore();
     }
     async initStore() {

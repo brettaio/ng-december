@@ -5,18 +5,27 @@ import * as AOS from 'aos';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app.component.html',
+    templateUrl: './app.component.html'
 })
 export class AppComponent {
+    /* Stripe Link */
+    stripeLink = 'https://buy.stripe.com/fZe5ln224amc0WQ7sy';
+
     storeData: any;
     showTopButton = false;
-    constructor(public store: Store<any>, private service: AppService) {
+    constructor(
+        public store: Store<any>,
+        private service: AppService
+    ) {
         this.initStore();
     }
     headerClass = '';
     ngOnInit() {
         window.addEventListener('scroll', () => {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            if (
+                document.body.scrollTop > 50 ||
+                document.documentElement.scrollTop > 50
+            ) {
                 this.showTopButton = true;
                 this.headerClass = 'sticky-header';
             } else {
@@ -27,7 +36,7 @@ export class AppComponent {
 
         // aos animation
         AOS.init({
-            once: true,
+            once: true
         });
 
         // main loader

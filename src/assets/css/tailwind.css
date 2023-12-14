@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'reey';
-    src: url('/assets/fonts/reey-regular-webfont.woff2') format('woff2'), url('/assets/fonts/reey-regular-webfont.woff') format('woff');
+    src:
+        url('/assets/fonts/reey-regular-webfont.woff2') format('woff2'),
+        url('/assets/fonts/reey-regular-webfont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -23,7 +25,7 @@
         @apply mb-3 text-lg font-extrabold text-primary sm:mb-4;
     }
     .heading h4 {
-        @apply text-2xl font-extrabold text-black dark:text-white sm:text-3xl lg:text-[40px] lg:!leading-[50px];
+        @apply text-2xl font-extrabold text-secondary dark:text-white sm:text-3xl lg:text-[40px] lg:!leading-[50px];
     }
     .portfolio-filter .filter.active button,
     .upcoming-party-filter .filter.active button {
@@ -228,7 +230,10 @@ header .menus.open-menus {
     @apply text-white;
 }
 
-.dark .apexcharts-canvas .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+.dark
+    .apexcharts-canvas
+    .apexcharts-tooltip.apexcharts-theme-light
+    .apexcharts-tooltip-title {
     @apply border-[#060818] bg-[#060818];
 }
 
