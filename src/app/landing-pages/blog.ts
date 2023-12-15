@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 @Component({
-    templateUrl: './terms-conditions.html'
+    templateUrl: './blog.html'
 })
-export class TermsConditionsComponent {
+export class BlogComponent {
     storeData: any;
     constructor(public store: Store<any>) {
         this.initStore();

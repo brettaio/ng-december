@@ -21,6 +21,7 @@
         "@angular/service-worker": "^17.0.0",
         "@ngrx/store": "^17.0.0",
         "@tailwindcss/typography": "^0.5.8",
+        "@types/swiper": "^6.0.0",
         "aos": "^2.3.4",
         "apexcharts": "^3.36.3",
         "axios": "^1.6.2",

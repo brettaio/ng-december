@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 @Component({
-    moduleId: module.id,
-    templateUrl: './faq.html',
+    templateUrl: './faq.html'
 })
 export class FaqComponent {
     storeData: any;

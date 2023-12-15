@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 @Component({
-    moduleId: module.id,
-    templateUrl: './about-us.html',
+    templateUrl: './about-us.html'
 })
 export class AboutUsComponent {
     storeData: any;

@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 @Component({
-    moduleId: module.id,
-    templateUrl: './privacy-policy.html',
+    templateUrl: './privacy-policy.html'
 })
 export class PrivacyPolicyComponent {
     storeData: any;

@@ -1,0 +1,421 @@
+<div>
+    <div
+        class="bg-[url(/assets/images/inner-page-hero-bg.png)] bg-cover bg-bottom bg-no-repeat pt-[82px] lg:pt-[106px]"
+    >
+        <div class="relative">
+            <div class="container">
+                <div
+                    class="grid items-center gap-8 bg-[url('/assets/images/world-map.png')] bg-cover bg-top bg-no-repeat pb-0 pt-14 lg:grid-cols-2 lg:pb-60 lg:pt-20 xl:pt-36"
+                >
+                    <div
+                        class="text-white lg:w-full"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                        data-aos-offset="0"
+                        data-aos-delay="300"
+                    >
+                        <div
+                            class="heading relative mb-0 text-center lg:text-left"
+                        >
+                            <h6>{{heroH6}}</h6>
+                            <h4>{{heroFirstSentence}}</h4>
+                            <h4>{{heroSecondSentence}}</h4>
+                            <h4>{{heroThirdSentence}}</h4>
+                            <h4>{{heroForthSentence}}</h4>
+                        </div>
+                    </div>
+                    <div
+                        class="mx-auto mb-16 mt-5 flex w-full justify-center"
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-offset="0"
+                        data-aos-delay="300"
+                    >
+                        <img
+                            src="/assets/images/index-example.png"
+                            height="auto"
+                            width="w-full"
+                            alt="home-banner-icon"
+                            class="border-double border-4 border-primary rounded-[20px]"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="pt-12 pb-14 md:pb-[100px]">
+        <div class="container">
+            <div>
+                <ul
+                    class="filters portfolio-filter mx-auto flex w-max gap-7 whitespace-nowrap pb-2.5 font-bold dark:text-white"
+                >
+                    <li
+                        class="active filter"
+                        [ngClass]="{ active: activeTab === 'all' }"
+                    >
+                        <button
+                            type="button"
+                            class="rounded-[10px] bg-gray/5 py-4 px-5 leading-5 transition hover:bg-secondary hover:text-white"
+                            (click)="activeTab = 'all'"
+                        >
+                            All
+                        </button>
+                    </li>
+                    <li
+                        class="filter"
+                        [ngClass]="{ active: activeTab === 'landing-pages' }"
+                    >
+                        <button
+                            type="button"
+                            class="rounded-[10px] bg-gray/5 py-4 px-5 leading-5 transition hover:bg-secondary hover:text-white"
+                            (click)="activeTab = 'landing-pages'"
+                        >
+                            Landing Pages
+                        </button>
+                    </li>
+                    <li
+                        class="filter"
+                        [ngClass]="{ active: activeTab === 'website' }"
+                    >
+                        <button
+                            type="button"
+                            class="rounded-[10px] bg-gray/5 py-4 px-5 leading-5 transition hover:bg-secondary hover:text-white"
+                            (click)="activeTab = 'website'"
+                        >
+                            Website
+                        </button>
+                    </li>
+                    <li
+                        class="filter"
+                        [ngClass]="{ active: activeTab === 'app' }"
+                    >
+                        <button
+                            type="button"
+                            class="rounded-[10px] bg-gray/5 py-4 px-5 leading-5 transition hover:bg-secondary hover:text-white"
+                            (click)="activeTab = 'app'"
+                        >
+                            Mobile App
+                        </button>
+                    </li>
+                    <li
+                        class="filter"
+                        [ngClass]="{ active: activeTab === 'application' }"
+                    >
+                        <button
+                            type="button"
+                            class="rounded-[10px] bg-gray/5 py-4 px-5 leading-5 transition hover:bg-secondary hover:text-white"
+                            (click)="activeTab = 'application'"
+                        >
+                            Web Application
+                        </button>
+                    </li>
+                    <li
+                        class="filter"
+                        [ngClass]="{ active: activeTab === 'ecommerce' }"
+                    >
+                        <button
+                            type="button"
+                            class="rounded-[10px] bg-gray/5 py-4 px-5 leading-5 transition hover:bg-secondary hover:text-white"
+                            (click)="activeTab = 'ecommerce'"
+                        >
+                            Ecommerce
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="projects mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+            >
+                <div
+                    class="project"
+                    [ngClass]="activeTab === 'all' || activeTab === 'landing-pages' ? 'block' : 'hidden'"
+                >
+                    <div
+                        class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none"
+                    >
+                        <a
+                            routerLink="/landing-pages/application"
+                            class="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
+                        ></a>
+                        <img
+                            src="/assets/images/application-example.png"
+                            alt="project-1"
+                            class="h-52 w-full rounded-t-3xl object-cover"
+                        />
+                        <div class="p-5 text-sm font-bold">
+                            <h6 class="mb-1 text-black dark:text-white">
+                                Application Landing page
+                            </h6>
+                            <p>Single Page</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project"
+                    [ngClass]="activeTab === 'all' || activeTab === 'app' ? 'block' : 'hidden'"
+                >
+                    <div
+                        class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none"
+                    >
+                        <a
+                            routerLink="/landing-pages/portfolio-detail"
+                            class="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
+                        ></a>
+                        <img
+                            src="/assets/images/project-2.png"
+                            alt="project-2"
+                            class="h-52 w-full rounded-t-3xl object-cover"
+                        />
+                        <div class="p-5 text-sm font-bold">
+                            <h6 class="mb-1 text-black dark:text-white">
+                                Crypto Game - UX Interface
+                            </h6>
+                            <p>Website, App</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project"
+                    [ngClass]="activeTab === 'all' || activeTab === 'website' ? 'block' : 'hidden'"
+                >
+                    <div
+                        class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none"
+                    >
+                        <a
+                            routerLink="/landing-pages/portfolio-detail"
+                            class="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
+                        ></a>
+                        <img
+                            src="/assets/images/project-3.png"
+                            alt="project-3"
+                            class="h-52 w-full rounded-t-3xl object-cover"
+                        />
+                        <div class="p-5 text-sm font-bold">
+                            <h6 class="mb-1 text-black dark:text-white">
+                                Looking for a quiet place
+                            </h6>
+                            <p>Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project"
+                    [ngClass]="activeTab === 'all' || activeTab === 'website' ? 'block' : 'hidden'"
+                >
+                    <div
+                        class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none"
+                    >
+                        <a
+                            routerLink="/portfolio-detail"
+                            class="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
+                        ></a>
+                        <img
+                            src="/assets/images/project-4.png"
+                            alt="project-4"
+                            class="h-52 w-full rounded-t-3xl object-cover"
+                        />
+                        <div class="p-5 text-sm font-bold">
+                            <h6 class="mb-1 text-black dark:text-white">
+                                WeTour - Travel Hero Illustration
+                            </h6>
+                            <p>Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project"
+                    [ngClass]="activeTab === 'all' || activeTab === 'design' ? 'block' : 'hidden'"
+                >
+                    <div
+                        class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none"
+                    >
+                        <a
+                            routerLink="/portfolio-detail"
+                            class="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
+                        ></a>
+                        <img
+                            src="/assets/images/project-5.png"
+                            alt="project-5"
+                            class="h-52 w-full rounded-t-3xl object-cover"
+                        />
+                        <div class="p-5 text-sm font-bold">
+                            <h6 class="mb-1 text-black dark:text-white">
+                                Digital Art Guide
+                            </h6>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project"
+                    [ngClass]="activeTab === 'all' || activeTab === 'design' ? 'block' : 'hidden'"
+                >
+                    <div
+                        class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none"
+                    >
+                        <a
+                            routerLink="/portfolio-detail"
+                            class="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
+                        ></a>
+                        <img
+                            src="/assets/images/project-6.png"
+                            alt="project-6"
+                            class="h-52 w-full rounded-t-3xl object-cover"
+                        />
+                        <div class="p-5 text-sm font-bold">
+                            <h6 class="mb-1 text-black dark:text-white">
+                                Frozeverse - 3D and motion design
+                            </h6>
+                            <p>Branding, Website, App</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project"
+                    [ngClass]="activeTab === 'all' || activeTab === 'website' ? 'block' : 'hidden'"
+                >
+                    <div
+                        class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none"
+                    >
+                        <a
+                            routerLink="/portfolio-detail"
+                            class="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
+                        ></a>
+                        <img
+                            src="/assets/images/project-7.png"
+                            alt="project-7"
+                            class="h-52 w-full rounded-t-3xl object-cover"
+                        />
+                        <div class="p-5 text-sm font-bold">
+                            <h6 class="mb-1 text-black dark:text-white">
+                                Space Landing page
+                            </h6>
+                            <p>Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project"
+                    [ngClass]="activeTab === 'all' || activeTab === 'app' ? 'block' : 'hidden'"
+                >
+                    <div
+                        class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none"
+                    >
+                        <a
+                            routerLink="/portfolio-detail"
+                            class="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
+                        ></a>
+                        <img
+                            src="/assets/images/project-8.png"
+                            alt="project-8"
+                            class="h-52 w-full rounded-t-3xl object-cover"
+                        />
+                        <div class="p-5 text-sm font-bold">
+                            <h6 class="mb-1 text-black dark:text-white">
+                                Crypto Game - UX Interface
+                            </h6>
+                            <p>Website, App</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project"
+                    [ngClass]="activeTab === 'all' || activeTab === 'website' ? 'block' : 'hidden'"
+                >
+                    <div
+                        class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none"
+                    >
+                        <a
+                            routerLink="/portfolio-detail"
+                            class="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
+                        ></a>
+                        <img
+                            src="/assets/images/project-9.png"
+                            alt="project-9"
+                            class="h-52 w-full rounded-t-3xl object-cover"
+                        />
+                        <div class="p-5 text-sm font-bold">
+                            <h6 class="mb-1 text-black dark:text-white">
+                                Looking for a quiet place
+                            </h6>
+                            <p>Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project"
+                    [ngClass]="activeTab === 'all' || activeTab === 'application' ? 'block' : 'hidden'"
+                >
+                    <div
+                        class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none"
+                    >
+                        <a
+                            routerLink="/portfolio-detail"
+                            class="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
+                        ></a>
+                        <img
+                            src="/assets/images/project-10.png"
+                            alt="project-10"
+                            class="h-52 w-full rounded-t-3xl object-cover"
+                        />
+                        <div class="p-5 text-sm font-bold">
+                            <h6 class="mb-1 text-black dark:text-white">
+                                WeTour - Travel Hero Illustration
+                            </h6>
+                            <p>Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project"
+                    [ngClass]="activeTab === 'all' || activeTab === 'design' ? 'block' : 'hidden'"
+                >
+                    <div
+                        class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none"
+                    >
+                        <a
+                            routerLink="/portfolio-detail"
+                            class="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
+                        ></a>
+                        <img
+                            src="/assets/images/project-11.png"
+                            alt="project-11"
+                            class="h-52 w-full rounded-t-3xl object-cover"
+                        />
+                        <div class="p-5 text-sm font-bold">
+                            <h6 class="mb-1 text-black dark:text-white">
+                                Digital Art Guide
+                            </h6>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project"
+                    [ngClass]="activeTab === 'all' || activeTab === 'ecommerce' ? 'block' : 'hidden'"
+                >
+                    <div
+                        class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none"
+                    >
+                        <a
+                            routerLink="/portfolio-detail"
+                            class="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
+                        ></a>
+                        <img
+                            src="/assets/images/project-12.png"
+                            alt="project-12"
+                            class="h-52 w-full rounded-t-3xl object-cover"
+                        />
+                        <div class="p-5 text-sm font-bold">
+                            <h6 class="mb-1 text-black dark:text-white">
+                                Frozeverse - 3D and motion design
+                            </h6>
+                            <p>Branding, Website, App</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

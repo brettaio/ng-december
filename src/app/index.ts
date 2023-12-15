@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 @Component({
-    moduleId: module.id,
     templateUrl: './index.html'
 })
 export class IndexComponent {
