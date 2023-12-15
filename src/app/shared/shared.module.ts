@@ -12,6 +12,15 @@ import { ClientSliderComponent } from './client-slider';
 import { ContactusComponent } from './contactus-component';
 import { LogoSliderComponent } from './logo-slider';
 
+// counter
+import { CountUpModule } from 'ngx-countup';
+
+// lightbox
+import { LightboxModule } from 'ngx-lightbox';
+
+// apexchart
+import { NgApexchartsModule } from 'ng-apexcharts';
+
 @NgModule({
     declarations: [
         ModalDialog,
@@ -25,7 +34,7 @@ import { LogoSliderComponent } from './logo-slider';
         ClientSliderComponent,
         LogoSliderComponent
     ],
-    imports: [CommonModule],
+    imports: [CommonModule, CountUpModule, LightboxModule, NgApexchartsModule],
     exports: [
         ModalDialog,
         ContactusComponent,

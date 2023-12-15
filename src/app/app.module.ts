@@ -3,15 +3,6 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 
-// counter
-import { CountUpModule } from 'ngx-countup';
-
-// lightbox
-import { LightboxModule } from 'ngx-lightbox';
-
-// apexchart
-import { NgApexchartsModule } from 'ng-apexcharts';
-
 // store
 import { StoreModule } from '@ngrx/store';
 import { indexReducer } from './store/index.reducer';
@@ -59,9 +50,6 @@ import { SharedModule } from './shared/shared.module';
         BrowserAnimationsModule,
         CommonModule,
         AppRoutingModule,
-        CountUpModule,
-        LightboxModule,
-        NgApexchartsModule,
         StoreModule.forRoot({ index: indexReducer }),
         ServiceWorkerModule.register('ngsw-worker.js', {
             enabled: !isDevMode(),
