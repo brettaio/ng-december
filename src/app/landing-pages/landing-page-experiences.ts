@@ -7,13 +7,13 @@ import { Store } from '@ngrx/store';
 export class LandingPageExperiencesComponent {
     storeData: any;
     activeTab = 'all';
-    heroH6 = `Fast Websites Expedite paid Advertising Success`;
+    heroH6 = `Fast Websites Expedite Paid Advertising Success`;
 
     /* Hero Text */
-    heroFirstSentence = `Here's What We Can Launch`;
-    heroSecondSentence = `Maximise Ad Conversions`;
-    heroThirdSentence = `Break Neck Speed PWA's`;
-    heroForthSentence = `Articulated Key Word Relevance = Success`;
+    heroFirstSentence = `Ready To Launch`;
+    heroSecondSentence = `Landing Page Experiences`;
+    heroThirdSentence = `Break Neck Speeds`;
+    heroForthSentence = `Key Word Relevant For Ad Success`;
 
     constructor(public store: Store<any>) {
         this.initStore();
